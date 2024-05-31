@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+* {
+  font-family: 'Montserrat';
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+p {
+  padding: 10px;
+}
+
+
+.pageLinks {
+  margin: 10px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #000000;
+
+}
+
+
+.food-card-container {
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 50%;
+  margin-left: 1.5%;
+  margin-right: 0.5%;
+  margin-top: 1%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* colors
+451400
+ac2117
+*/
+
+.colorOne {
+  color: rgb(156, 94, 37)
+    /*#451400*/
+  ;
+  background-color: rgb(0, 0, 0)
+    /*#451400*/
+  ;
+}
+
+.colorTwo {
+  color: #ac2117;
+  background-color: #ac2117;
+}
+
+.food-card-container-right {
+  float: right;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  width: 48%;
+  margin-top: 1%;
+  margin-right: 1.5%;
+  margin-left: 0.5%;
+  padding: 10px;
+}
+
+.topButtons {
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  padding-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 85%;
+}
+
+#backgroundForNav {
+  width: 100%;
+  background-color: #212529;
+}
+
+#orderLink {
+  align-content: center;
+}
+
+.navDivs {
+  background-color: #ac2117;
+  border-radius: 5px;
+}
+
+#checkout {
+  border-radius: 5px;
+  border: none;
+  background-color: #ac2117;
+}
+
+#dispOrderButton {
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#pageTitle {
+  font-size: 155%;
+  font-weight: bolder;
+  margin: 0;
+  position: relative;
+  left: 2%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#burritoCard {
+  display: none;
+}
+
+#bowlCard {
+  display: none;
+}
+
+
+a {
+  color: white;
+  font-size: 12px;
+  text-decoration: underline;
+  text-align: left;
+}
+
+#clearCartButton {
+  border-radius: 5px;
+  border: none;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.back-white {
+  background-color: #FFFFFF;
+}
+
+#submitBurrito,
+#submitBowl,
+#dispOrderButton,
+#clearCartButton {
+  border-radius: 5px;
+  border: none;
+  color: #ac2117;
+
+}
+
+.navbar {
+  background-color: white;
+}
+
+body {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+footer {
+  background-color: #000;
+  padding-left: 1%;
+}
+
+.aboutUsMain {
+  margin-top: 0.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Optional: center vertically as well */
+  align-items: center;
+  height: 100vh;
+}

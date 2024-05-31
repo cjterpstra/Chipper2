@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chipotle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+        <header>
+            <nav class="navbar navbar-expand-lg back-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="media/logo1.png" alt="Logo" width="100"
+                            height="100" class="d-inline-block align-text-top"></a>
+                    <a class="nav-link d-lg-none" href="index.html" id="pageTitle">Chipper</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active ms-auto" href="order.html" aria-current="page">Order</a>
+                            <a class="nav-link  ms-auto" href="checkout.html">Checkout</a>
+                            <a class="nav-link  ms-auto" href="about.html" ">About</a>
+                    <a class=" nav-link ms-auto" href="index.html">Welcome Page</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id="content" class="bg-body-tertiary">
+            <div class="container-fluid" id="main">
+                <div class="row card-container">
+                    <div class="col-6">
+                        <div class="card mt-3">
+                            <img src="media/Burrito.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Burrito</h5>
+                                <p class="card-text">Freshly made corn tortilla that you can top with your favorite
+                                    ingredients. - $9.99
+                                </p>
+                                <form id="burritoForm" method="post">
+                                    <h6><b>Rice</b></h6>
+
+                                    <input type="radio" id="brownRice" name="rice" value="brown">
+                                    <label for="brownRice">Brown Rice</label><br>
+
+                                    <input type="radio" id="whiteRice" name="rice" value="white">
+                                    <label for="whiteRice">White Rice</label><br>
+
+                                    <hr>
+                                    <h6><b>Beans</b></h6>
+
+                                    <input type="radio" id="beans_black" name="beans" value="black">
+                                    <label for="beans_black">Black Beans</label><br>
+
+                                    <input type="radio" id="beans_pinto" name="beans" value="pinto">
+                                    <label for="beans_pinto">Pinto Beans</label><br>
+
+                                    <hr>
+                                    <h6><b>Protein</b></h6>
+
+
+                                    <input type="radio" id="chicken" name="protein" value="chicken">
+                                    <label for="chicken">Chicken</label><br>
+                                    <input type="radio" id="steak" name="protein" value="steak">
+                                    <label for="steak">Steak</label><br>
+                                    <input type="radio" id="al-pastor" name="protein" value="al-pastor">
+                                    <label for="al-pastor">Al Pastor</label><br>
+
+
+                                    <hr>
+                                    <h6><b>Toppings</b></h6>
+
+                                    <input type="checkbox" id="topping_salsa" name="topping" value=" salsa">
+                                    <label for="topping_salsa">Salsa</label><br>
+
+                                    <input type="checkbox" id="topping_guacamole" name="topping" value=" guacamole">
+                                    <label for="topping_guacamole">Guacamole</label><br>
+
+                                    <input type="checkbox" id="topping_cheese" name="topping" value=" cheese">
+                                    <label for="topping_cheese">Cheese</label><br>
+
+                                    <input type="checkbox" id="topping_tomatoes" name="topping" value=" tomatoes">
+                                    <label for="topping_tomatoes">Pico</label><br>
+
+                                    <input type="checkbox" id="topping_sour-cream" name="topping" value=" sour cream">
+                                    <label for=" topping_sour-cream"">Sour Cream</label><br>
+                                <br>
+                                <button type=" submit" id="submitBurrito" value="Submit">Add to Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card mt-3">
+                            <img src="media/burritobowl.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bowl</h5>
+                                <p class="card-text">Almost the exact same as a burrito but in a bowl instead of a
+                                    tortilla! - $9.99
+                                </p>
+                                <form id="bowlForm" method="post">
+                                    <h6><b>Rice</b></h6>
+
+                                    <input type="radio" id="bowl_brownRice" name="rice" value="brown">
+                                    <label for="bowl_brownRice">Brown Rice</label><br>
+
+                                    <input type="radio" id="bowl_whiteRice" name="rice" value="white">
+                                    <label for="bowl_whiteRice">White Rice</label><br>
+
+                                    <hr>
+                                    <h6><b>Beans</b></h6>
+
+                                    <input type="radio" id="bowl_beans_black" name="beans" value="black">
+                                    <label for="bowl_beans_black">Black Beans</label><br>
+
+                                    <input type="radio" id="bowl_beans_pinto" name="beans" value="pinto">
+                                    <label for="bowl_beans_pinto">Pinto Beans</label><br>
+
+                                    <hr>
+                                    <h6><b>Protein</b></h6>
+
+
+                                    <input type="radio" id="bowl_chicken" name="protein" value="chicken">
+                                    <label for="bowl_chicken">Chicken</label><br>
+                                    <input type="radio" id="bowl_steak" name="protein" value="steak">
+                                    <label for="bowl_steak">Steak</label><br>
+                                    <input type="radio" id="bowl_al-pastor" name="protein" value="al-pastor">
+                                    <label for="bowl_al-pastor">Al Pastor</label><br>
+
+
+                                    <hr>
+                                    <h6><b>Toppings</b></h6>
+
+                                    <input type="checkbox" id="bowl_topping_salsa" name="topping" value=" salsa">
+                                    <label for="bowl_topping_salsa">Salsa</label><br>
+
+                                    <input type="checkbox" id="bowl_topping_guacamole" name="topping"
+                                        value=" guacamole">
+                                    <label for="bowl_topping_guacamole">Guacamole</label><br>
+
+                                    <input type="checkbox" id="bowl_topping_cheese" name="topping" value=" cheese">
+                                    <label for="bowl_topping_cheese">Cheese</label><br>
+
+                                    <input type="checkbox" id="bowl_topping_tomatoes" name="topping" value=" tomatoes">
+                                    <label for="bowl_topping_tomatoes">Pico</label><br>
+
+                                    <input type="checkbox" id="bowl_topping_sour-cream" name="topping"
+                                        value=" sour cream"">
+                            <label for=" bowl_topping_sour-cream"">Sour Cream</label><br>
+                                    <br>
+                                    <button type="submit" id="submitBowl" value="Submit">Add to
+                                        Cart</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+
+        </div>
+        <!-- Page contents -->
+        <!-- Card One -->
+        <footer>
+            <h6 style="padding-top: 20px; color: white; font-size: 13px;">&#169 2024 Chipper Inc.</h6>
+            <a href="about.html">About</a>
+            <br>
+            <a href="index.html">Order</a>
+            <br>
+            <a href="checkout.html">Checkout</a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
