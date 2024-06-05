@@ -57,7 +57,6 @@
         </div>
       </div>
       <br>
-
       <div class="container-fluid">
         <div class="bowlCard row" id="bowlCard">
           <div class="col-3">
@@ -72,6 +71,10 @@
         </div>
       </div>
       <br>
+      <div class="ms-3" id="totalTitle" style="display: none;"><b>Total:</b> </div>
+      <div class="ms-3" id="totalDiv" style="display: none;">
+        $ <span id="total"></span>
+      </div>
       <br>
       <br>
       <br>
@@ -108,8 +111,10 @@
       var bowltoppings = sessionStorage.getItem("bowltoppings");
       var bowlCard = document.getElementById("bowlCard");
       var displayBurrito = document.getElementById("burritoResult");
-      var displayBowl = document.getElementById("bowlResult")
-
+      var displayBowl = document.getElementById("bowlResult");
+      var total = document.getElementById("total");
+      var totalTitle = document.getElementById("totalTitle");
+      var totalDiv = document.getElementById("totalDiv");
       function resetButtonText() {
         displayButton.innerHTML = "Refresh Cart"
       }
@@ -118,6 +123,9 @@
         if (rice != null && beans != null && protein != null) {
           burritoCard.style.display = "block";
           displayButton.innerHTML = "Refresh Cart";
+          totalDiv.style.display = "block";
+          totalTitle.style.display = "block";
+          total.innerHTML = sessionStorage.getItem("total");
           if (toppings == null) {
             displayBurrito.innerHTML = "You ordered a burrito with " + rice + " rice, " + beans + " beans, and " + protein + " as your protein.";
           } else {
@@ -131,6 +139,10 @@
         }
         if (bowlrice != null && bowlbeans != null && bowlprotein != null) {
           bowlCard.style.display = "block";
+          displayButton.innerHTML = "Refresh Cart";
+          totalDiv.style.display = "block";
+          totalTitle.style.display = "block";
+          total.innerHTML = sessionStorage.getItem("total");
           if (bowltoppings == null) {
             displayBowl.innerHTML = "You ordered a bowl with " + bowlrice + " rice, " + bowlbeans + " beans, and " + bowlprotein + " as your protein.";
             displayButton.innerHTML = "Refresh Cart";
