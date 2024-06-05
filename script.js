@@ -16,8 +16,17 @@ burritoForm.addEventListener("submit", function(event){
   sessionStorage.setItem("burritoBeans", beans);
   sessionStorage.setItem("burritoProtein", protein);
 
-  pagetotal += 9.99;
-  sessionStorage.setItem("total", pagetotal);
+   
+  if (sessionStorage.getItem("total") != null) {
+    let baseAdd = parseFloat(sessionStorage.getItem("total"));
+    baseAdd += 9.99;
+    sessionStorage.setItem("total", baseAdd);
+    
+  } else {
+    pagetotal += 9.99;
+    sessionStorage.setItem("total", pagetotal);
+  }
+  
   
   event.preventDefault();
 });
@@ -39,8 +48,14 @@ bowlForm.addEventListener("submit", function(event){
   sessionStorage.setItem("bowlRice", bowlRice);
   sessionStorage.setItem("bowlBeans", bowlBeans);
   sessionStorage.setItem("bowlProtein", bowlProtein);
-  pagetotal += 9.99;
-  sessionStorage.setItem("total", pagetotal);
-  
+  if (sessionStorage.getItem("total") != null) {
+    let baseAdd = parseFloat(sessionStorage.getItem("total"));
+    baseAdd += 9.99;
+    sessionStorage.setItem("total", baseAdd);
+    
+  } else {
+    pagetotal += 9.99;
+    sessionStorage.setItem("total", pagetotal);
+  }
   event.preventDefault();
 });
